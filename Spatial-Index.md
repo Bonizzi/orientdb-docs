@@ -82,7 +82,7 @@ doc.save();
 A spatial index on the *location* field s defined by
 
 ```SQL
-CREATE INDEX Restaurant.location ON Restaurant(location) SPATIAL ENGINE LUCENE"
+CREATE INDEX Restaurant.location ON Restaurant(location) SPATIAL ENGINE LUCENE
 ```
 
 
