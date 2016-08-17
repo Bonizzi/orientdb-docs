@@ -52,7 +52,7 @@ When the ETL module runs the CSV Extractor, it parses a file formated to [Apache
 | `"columns"` | Defines array for names and (optionally) types to write. | string array | | |
 | `"nullValue"` | Defines the null value in the file. | string | | `NULL` |
 | `"dateFormat"` | Defines the format to use in parsing dates from file. | string | | `yyyy-MM-dd` |
-| `"dateTimeFormat"` | Defines the format to use in parsing dates with time from file. | string | | `yyyy-MM-dd HH:mm` |
+| `"dateTimeFormat"` | Defines the format to use in parsing dates with time from file. | string | | `yyyy-MM-dd HH:mm:ss` |
 | `"quote"` | Defines string character delimiter. | char | | `"`|
 | `"skipFrom"` | Defines the line number you want to skip from. | integer | | |
 | `"skipTo"` | Defines the line number you want to skip to. | integer | | |
@@ -93,7 +93,7 @@ When the ETL module runs the CSV Extractor, it parses a file formated to [Apache
       {  "predefinedFormat": "DEFAULT",
          "nullValue" : "N/A",
          "dateFormat" : "dd-MM-yyyy",
-         "dateTimeFormat" : "dd-MM-yyyy HH:mm"
+         "dateTimeFormat" : "dd-MM-yyyy HH:mm:ss"
       }
   }
   ```
@@ -105,7 +105,7 @@ When the ETL module runs the CSV Extractor, it parses a file formated to [Apache
       {  "predefinedFormat": "DEFAULT",
          "nullValue" : "N/A",
          "dateFormat" : "dd-MM-yyyy",
-         "dateTimeFormat" : "dd-MM-yyyy HH:mm",
+         "dateTimeFormat" : "dd-MM-yyyy HH:mm:ss",
          "columns": ["name:string","createdAt:date","updatedAt:dateTime"]
       }
   }
